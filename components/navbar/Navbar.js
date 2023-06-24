@@ -15,7 +15,7 @@ export default function Navbar() {
 
   // start mobile first plus facile
   return (
-    <nav className="fixed top-0 flex items-center w-full p-6 z-100 bg-zinc-950">
+    <nav className="fixed top-0 flex items-center w-full p-3 z-100 bg-zinc-950 md:h-[90px] md:p-6">
       <div className="flex flex-wrap items-center justify-between w-full mx-auto md:flex-nowrap max-w-7xl">
         {/* LOGO */}
         <Link
@@ -25,7 +25,12 @@ export default function Navbar() {
           className="text-xl font-bold cursor-pointer text-gray-50"
           onClick={() => setToggle(false)}
         >
-          SC Dev
+          <img
+            src="./logo/sc_dev_logo.png"
+            alt="logo scdev"
+            srcset=""
+            className="w-24 h-24"
+          />
         </Link>
         {/* Burger Btn */}
         <button
