@@ -1,3 +1,4 @@
+import About from "@/components/About/About";
 import Main from "@/components/main/Main";
 import Navbar from "@/components/navbar/Navbar";
 import Projects from "@/components/projects/Projects";
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <Navbar />
       <Main />
+      <About />
       <Projects />
     </>
   );

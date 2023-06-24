@@ -9,8 +9,8 @@ export default function Main() {
     >
       <div className="flex flex-col items-center justify-center w-full h-full p-2 mx-auto mt-20 max-w-7xl lg:mt-0">
         <div>
-          <h1 className="py-2 text-xl font-bold text-black md:text-2xl">
-            {`Salut, moi c'est`} <span className="text-orange-500">Sonny</span>
+          <h1 className="py-2 text-3xl font-bold text-black">
+            {`Salut, moi c'est`} <span className="text-gray-500">Sonny</span>
           </h1>
           <h2 className="py-2 text-2xl font-bold text-orange-700 md:text-4xl">
             Je suis Développeur Web
@@ -35,8 +35,10 @@ export default function Main() {
 const Button = ({ children, variant = "primary", href }) => {
   return (
     <button
-      className={`p-4 font-medium text-white md:py-3 md:px-7 rounded-xl hover:scale-105 duration-500 ${
-        variant === "primary" ? "bg-orange-600" : "bg-black"
+      className={`p-4 font-medium text-white md:py-3 md:px-7 rounded-lg hover:scale-105 duration-500 ${
+        variant === "primary"
+          ? "bg-orange-600 hover:bg-orange-800"
+          : "bg-zinc-900 hover:bg-zinc-950"
       }`}
     >
       <Link to={href} smooth={true} duration={600}>
