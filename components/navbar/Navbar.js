@@ -3,7 +3,7 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { navbarData } from "./navbarData";
 
-// Link of react-scroll and not NEXTJS
+// Link of react-scroll
 import { Link } from "react-scroll";
 
 export default function Navbar() {
@@ -22,15 +22,10 @@ export default function Navbar() {
           to="home"
           smooth={true}
           duration={600}
-          className="text-xl font-bold cursor-pointer text-gray-50"
+          className="overflow-hidden text-xl font-bold cursor-pointer text-gray-50"
           onClick={() => setToggle(false)}
         >
-          <img
-            src="./logo/sc_dev_logo.png"
-            alt="logo scdev"
-            srcset=""
-            className="w-24 h-24"
-          />
+          <img src="./logo/sc_dev_logo.png" alt="logo scdev" />
         </Link>
         {/* Burger Btn */}
         <button
@@ -64,7 +59,7 @@ const NavbarLink = ({ link, setToggle }) => {
         smooth={true}
         duration={600}
         onClick={() => setToggle(false)}
-        className="duration-500 cursor-pointer hover:text-orange-500"
+        className="cursor-pointer hover:duration-500 hover:text-orange-500"
       >
         {link.title}
       </Link>
