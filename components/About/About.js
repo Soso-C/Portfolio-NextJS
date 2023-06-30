@@ -3,7 +3,7 @@ const About = () => {
     <>
       <span id="a-propos"></span>
       <div className="flex flex-col items-center justify-center w-full min-h-screen py-20 shadow-md bg-zinc-900">
-        <div className="flex flex-col items-center justify-between h-full px-4 mx-auto max-w-7xl lg:flex-row lg:px-2">
+        <div className="flex flex-col items-center justify-between h-full px-4 mx-auto text-white max-w-7xl lg:flex-row lg:px-2">
           <div className="w-full h-full text-center lg:w-3/3">
             <h2 className="text-4xl font-bold text-orange-600 pb-14">
               {`Hello World, je m'apelle Sonny !`}

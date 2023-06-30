@@ -21,7 +21,7 @@ export default function Main() {
           </p>
           <div className="flex items-center justify-center py-4 m-auto space-x-4">
             <Button href={"projects"}>Voir mes projets</Button>
-            <Button variant={"secondary"} href={"technos"}>
+            <Button variant={"secondary"} href={"skills"}>
               Voir mes technos
             </Button>
           </div>
