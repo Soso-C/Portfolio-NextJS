@@ -11,7 +11,7 @@ module.exports = {
         navbarDown: {
           "0%": {
             opacity: 0,
-            height: "0px",
+            height: "0",
           },
           "100%": {
             opacity: 1,

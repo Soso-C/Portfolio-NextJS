@@ -17,8 +17,8 @@ export default function Navbar() {
   return (
     <nav
       className={`${
-        toggle && ""
-      }  fixed top-0 flex items-center w-full p-3 z-100 bg-zinc-950 md:h-[90px] md:p-6`}
+        toggle && "h-fit"
+      } fixed top-0 flex items-center w-full p-3 z-100 bg-zinc-950 md:h-[90px] md:p-6`}
     >
       <div className="flex flex-wrap items-center justify-between w-full mx-auto md:flex-nowrap max-w-7xl">
         {/* LOGO */}
@@ -29,7 +29,11 @@ export default function Navbar() {
           className="overflow-hidden text-xl font-bold cursor-pointer text-gray-50"
           onClick={() => setToggle(false)}
         >
-          <img src="./logo/sc_dev_logo.png" alt="logo scdev" />
+          <img
+            src="./logo/sc_dev_logo.png"
+            alt="logo scdev"
+            className="max-h-[80px] max-w-[80px]"
+          />
         </Link>
         {/* Burger Btn */}
         <button
@@ -46,7 +50,14 @@ export default function Navbar() {
         >
           {/* navbar map link */}
           {navbarData.map((link, index) => {
-            return <NavbarLink key={index} link={link} setToggle={setToggle} />;
+            return (
+              <NavbarLink
+                key={index}
+                link={link}
+                setToggle={setToggle}
+                toggle={toggle}
+              />
+            );
           })}
         </ul>
       </div>
@@ -55,9 +66,13 @@ export default function Navbar() {
 }
 
 // Navbar Link
-const NavbarLink = ({ link, setToggle }) => {
+const NavbarLink = ({ link, setToggle, toggle }) => {
   return (
-    <li className="first:mt-4 first:md:mt-0 border-t w-full flex justify-center p-2.5 md:border-none md:w-auto md:p-0 animate-fade delay-500">
+    <li
+      className={`${
+        toggle && " animate-fade"
+      } first:mt-4 first:md:mt-0 border-t w-full flex justify-center p-2.5 md:border-none md:w-auto md:p-0`}
+    >
       <Link
         to={link.href}
         smooth={true}
