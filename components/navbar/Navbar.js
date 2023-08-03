@@ -15,7 +15,11 @@ export default function Navbar() {
 
   // start mobile first plus facile
   return (
-    <nav className="fixed top-0 flex items-center w-full p-3 z-100 bg-zinc-950 md:h-[90px] md:p-6">
+    <nav
+      className={`${
+        toggle && ""
+      }  fixed top-0 flex items-center w-full p-3 z-100 bg-zinc-950 md:h-[90px] md:p-6`}
+    >
       <div className="flex flex-wrap items-center justify-between w-full mx-auto md:flex-nowrap max-w-7xl">
         {/* LOGO */}
         <Link
@@ -37,7 +41,7 @@ export default function Navbar() {
 
         <ul
           className={`${
-            toggle ? " flex" : " hidden"
+            toggle ? " flex animate-navbarDown" : " hidden"
           } flex-col justify-center items-center text-gray-50 font-medium pt-2 md:pt-0 md:space-y-0 w-full first:mt-2 md:flex-row md:w-auto md:space-x-10 md:flex`}
         >
           {/* navbar map link */}
@@ -53,7 +57,7 @@ export default function Navbar() {
 // Navbar Link
 const NavbarLink = ({ link, setToggle }) => {
   return (
-    <li className="first:mt-4 first:md:mt-0 border-t w-full flex justify-center p-2.5 md:border-none md:w-auto md:p-0">
+    <li className="first:mt-4 first:md:mt-0 border-t w-full flex justify-center p-2.5 md:border-none md:w-auto md:p-0 animate-fade delay-500">
       <Link
         to={link.href}
         smooth={true}

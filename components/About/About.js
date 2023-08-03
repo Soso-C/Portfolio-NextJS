@@ -21,7 +21,7 @@ const About = () => {
               </p>
 
               <p className="text-lg font-medium pb-14 lg:mx-auto lg:max-w-screen-lg">
-                {`Aujourd'hui je continue mes études pour pouvoir obtenir des compétences plus approfondies dans le domaine du développement en intégrant une formation de Concepteur Développeur D'Application d'une durée de 11 mois avec Human Booster`}
+                {`Aujourd'hui je continue mes études pour pouvoir obtenir des compétences plus approfondies dans le domaine du développement en intégrant une formation de Concepteur Développeur D'Application d'une durée de 11 mois avec Human Booster.`}
               </p>
 
               <p className="text-lg font-medium lg:mx-auto lg:max-w-screen-lg">

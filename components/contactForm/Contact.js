@@ -15,7 +15,7 @@ export default function ContactForm() {
               Contact
             </h2>
             <p className="font-medium text-orange-500">
-              Contactez moi pour plus d'informations
+              {"Contactez moi pour plus d'informations"}
             </p>
           </div>
 

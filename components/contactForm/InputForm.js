@@ -1,4 +1,5 @@
-import React, { forwardRef } from "react";
+/* eslint-disable react/display-name */
+import { forwardRef } from "react";
 
 export const InputForm = forwardRef(
   (
@@ -15,7 +16,7 @@ export const InputForm = forwardRef(
     ref
   ) => {
     return (
-      <div className={`p-2  ${large ? "w-full" : "w-1/2"}`}>
+      <div className={`p-2 ${large ? "w-full" : "w-1/2"}`}>
         {/* TextArea */}
         {textarea ? (
           <div>
