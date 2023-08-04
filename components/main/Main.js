@@ -1,5 +1,5 @@
 "use client";
-import { Link } from "react-scroll";
+import ButtonMain from "../Button/ButtonMain";
 
 export default function Main() {
   return (
@@ -24,10 +24,10 @@ export default function Main() {
             </p>
             {/* Buttons */}
             <div className="flex items-center py-4 m-auto space-x-4">
-              <Button href={"projects"}>Voir mes projets</Button>
-              <Button variant={"secondary"} href={"skills"}>
+              <ButtonMain href={"projects"}>Voir mes projets</ButtonMain>
+              <ButtonMain variant={"secondary"} href={"skills"}>
                 Voir mes technos
-              </Button>
+              </ButtonMain>
             </div>
           </div>
           <div className="my-auto">
@@ -44,18 +44,18 @@ export default function Main() {
 }
 
 // Button Main
-const Button = ({ children, variant = "primary", href }) => {
-  return (
-    <button
-      className={`p-3 font-medium text-white md:py-3 md:px-7 rounded-lg hover:scale-105 duration-500 ${
-        variant === "primary"
-          ? "bg-orange-600 hover:bg-orange-800"
-          : "bg-zinc-900 hover:bg-zinc-950"
-      }`}
-    >
-      <Link to={href} smooth={true} duration={600}>
-        {children}
-      </Link>
-    </button>
-  );
-};
+// const Button = ({ children, variant = "primary", href }) => {
+//   return (
+//     <button
+//       className={`p-3 font-medium text-white md:py-3 md:px-7 rounded-lg hover:scale-105 duration-500 ${
+//         variant === "primary"
+//           ? "bg-orange-600 hover:bg-orange-800"
+//           : "bg-zinc-900 hover:bg-zinc-950"
+//       }`}
+//     >
+//       <Link to={href} smooth={true} duration={600}>
+//         {children}
+//       </Link>
+//     </button>
+//   );
+// };
