@@ -20,7 +20,7 @@ export default function Navbar() {
         toggle && "h-fit"
       } fixed top-0 flex items-center w-full p-3 z-100 bg-zinc-950 md:h-[90px] md:p-6`}
     >
-      <div className="flex flex-wrap items-center justify-between w-full mx-auto md:flex-nowrap max-w-7xl">
+      <div className="flex flex-wrap items-center justify-between w-full max-w-6xl mx-auto md:flex-nowrap">
         {/* LOGO */}
         <Link
           to="home"
