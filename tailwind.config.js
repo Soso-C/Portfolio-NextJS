@@ -15,7 +15,7 @@ module.exports = {
           },
           "100%": {
             opacity: 1,
-            height: "250px",
+            height: "205px",
           },
         },
         fade: {

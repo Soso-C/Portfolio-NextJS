@@ -8,13 +8,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-gradient-to-r from-gray-100 to-gray-300">
       <Navbar />
       <Main />
       {/* <About /> */}
       <Skills />
       <Projects />
       <ContactForm />
-    </>
+    </div>
   );
 }

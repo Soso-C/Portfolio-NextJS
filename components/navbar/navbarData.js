@@ -3,10 +3,10 @@ export const navbarData = [
     title: "Accueil",
     href: "home",
   },
-  {
-    title: "À propos",
-    href: "a-propos",
-  },
+  // {
+  //   title: "À propos",
+  //   href: "a-propos",
+  // },
   {
     title: "Compétences",
     href: "skills",
